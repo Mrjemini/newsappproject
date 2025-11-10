@@ -75,12 +75,6 @@ A modern Android application built with Kotlin featuring news browsing, messagin
 #### Location
 - Play Services Location 21.3.0
 
-#### Testing
-- JUnit 4.13.2
-- Mockito 5.12.0
-- Mockito Kotlin 5.3.1
-- Coroutines Test 1.8.1
-- Arch Core Testing 2.2.0
 
 ## Setup Instructions
 
@@ -222,29 +216,6 @@ app/src/main/java/com/example/newsapp/
 - **Dependency Injection**: Hilt for loose coupling
 - **MVVM**: ViewModel + StateFlow + ViewBinding
 
-## Running Tests
-
-### Unit Tests
-```bash
-# Run all unit tests
-./gradlew test
-
-# Run specific test class
-./gradlew test --tests HomeViewModelTest
-
-# Run tests with coverage
-./gradlew testDebugUnitTestCoverage
-```
-
-### Test Results
-- Location: `app/build/reports/tests/testDebugUnitTest/index.html`
-- Coverage: `app/build/reports/coverage/test/debug/index.html`
-
-### Test Coverage
-- ✅ HomeViewModel: Search functionality, refresh logic
-- ✅ NewsRepository: API calls, caching, error handling
-- ✅ MessageRepository: Send/receive messages
-
 ## Permissions
 
 ### Required Permissions
@@ -277,7 +248,6 @@ app/src/main/java/com/example/newsapp/
 - Camera and gallery integration
 - Location services
 - Runtime permission handling (SDK 23-35)
-- Unit tests for ViewModels and Repositories
 
 ### Can Be Extended 🔧
 - Pagination for news list
@@ -314,19 +284,6 @@ app/src/main/java/com/example/newsapp/
 
 📹 **Demo Video**: [Link to demo video - Upload your screen recording here]
 
-### Recording the Demo
-1. Use Android Studio's built-in screen recorder
-2. Or use ADB: `adb shell screenrecord /sdcard/demo.mp4`
-3. Demonstrate:
-   - Home tab with news loading
-   - Search functionality
-   - Pull-to-refresh
-   - Offline mode indicator
-   - Messages tab with send/receive
-   - Image sending
-   - Profile tab with camera/gallery/location
-   - Dark/Light theme switching
-
 ## Performance Optimizations
 
 - **Image Loading**: Glide with placeholder and error handling
@@ -336,22 +293,3 @@ app/src/main/java/com/example/newsapp/
 - **Flow**: Cold streams for reactive data
 - **DiffUtil**: Efficient RecyclerView updates
 
-## Security Considerations
-
-- API keys should be in local.properties (not included here for demo)
-- Encrypted SharedPreferences ready for sensitive data
-- FileProvider for secure image sharing
-- Proper permission checks before accessing resources
-
-## Future Enhancements
-
-- [ ] Add pagination for news feed
-- [ ] Implement bookmarks with Room
-- [ ] Add push notifications
-- [ ] User authentication
-- [ ] Share functionality
-- [ ] News categories/filters
-- [ ] Multi-language support
-- [ ] Accessibility improvements
-- [ ] Widget support
-- [ ] In-app browser for news articles

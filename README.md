@@ -282,7 +282,7 @@ app/src/main/java/com/example/newsapp/
 
 ## Video Demo
 
-📹 **Demo Video**: [Link to demo video - Upload your screen recording here]
+📹 **Demo Video**: https://drive.google.com/file/d/1oFBhuuUFEa_jbdxg6NOPydZRhtFfKtu2/view?usp=sharing
 
 ## Performance Optimizations
 
